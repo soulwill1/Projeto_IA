@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm 
-    ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop=blur-sm"}`}
+    ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"}`}
     >
       <div
         className="flex items-center px-5 
@@ -66,7 +66,7 @@ const Header = () => {
                lg:-mr-0.25 lg:text-xs lg:font-semibold 
                ${
                  item.url === pathname.hash
-                   ? "z-2 lg:text-n1"
+                   ? "z-2 lg:text-n-1"
                    : "lg:text-n-1/50"
                }
                lg:leading-5 lg:hover:text-n-1 xl:px-12`}
